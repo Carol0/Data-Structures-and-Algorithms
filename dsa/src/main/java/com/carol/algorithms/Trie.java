@@ -1,6 +1,5 @@
-package com.example.leetcode.prefixsum.algorithm;
+package com.carol.algorithms;
 
-import javax.swing.*;
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package com.example.leetcode.prefixsum.algorithm;
+package com.carol.algorithms;
 
 /**
  * @author Carol

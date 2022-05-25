@@ -1,6 +1,4 @@
-package com.example.leetcode.prefixsum.algorithm;
-
-import org.springframework.objenesis.strategy.SingleInstantiatorStrategy;
+package com.carol.algorithms;
 
 import java.util.ArrayList;
 import java.util.Deque;

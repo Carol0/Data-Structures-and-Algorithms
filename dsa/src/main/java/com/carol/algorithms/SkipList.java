@@ -1,7 +1,6 @@
-package com.example.leetcode.prefixsum.algorithm;
+package com.carol.algorithms;
 
 
-import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -57,7 +56,6 @@ public class SkipList {
          */
         private int level;
 
-        @PostConstruct
         public void init() {
             head = new Node(-1);
             head.next = head;

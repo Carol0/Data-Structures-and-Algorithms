@@ -1,4 +1,4 @@
-package com.example.leetcode.prefixsum.middle;
+package com.carol.leetcode;
 
 /**
  * @author Carol
@@ -21,6 +21,17 @@ public class FindClosest {
                 new String[]{"I","am","a","student","from","a","university","in","a","city"},
                 "a", "student"));
     }
+
+    /**
+     * 思路：设置两个指针指向出现的word1，word2位置，初始值为-1，遍历words，每次遇到word1或者word2直接更新对应指针
+     * 当两个指针的下标均不为-1时，直接计算下标距离，并与之前记录的最短下标距离相比较，取较小值，遍历完之后，即可找到word1和word2
+     * 在words出现的最近距离
+     * 查找word1和word2在words中相距最近的距离
+     * @param words 查找的字符串数组
+     * @param word1 word1
+     * @param word2 word2
+     * @return 相距最近的距离
+     */
     public int findClosest(String[] words, String word1, String word2) {
         //使用两个指针分别指向word1和word2的位置，每次计算距离，存下最小距离
         int word1Index = -1;

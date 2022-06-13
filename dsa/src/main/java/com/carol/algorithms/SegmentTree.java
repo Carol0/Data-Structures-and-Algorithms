@@ -25,15 +25,18 @@ public class SegmentTree {
         System.out.println(tree.findSectionSum(1,5));
         System.out.println(tree.findSectionSum(1,1));
         System.out.println(tree.findSectionSum(2,4));
+        tree.update(2, 5);
+        System.out.println(tree.findSectionSum(1,5));
+        System.out.println(tree.findSectionSum(1,1));
+        System.out.println(tree.findSectionSum(2,4));
     }
 
     //head 指向线段树root节点的指针，使得root节点与其余节点操作保持一致
     Node head;
     int size;
-
-    //用于初次构建
     List<Integer> nums;
-    //前缀和数组，便于构建线段树时候计算区间值，用于初次构建
+
+    //前缀和数组，便于构建线段树时候计算区间值，用于初次构建辅助
     List<Integer> prefixSum ;
     public void init(List<Integer> nums) {
         //初始化一个头节点，便于操作
@@ -64,7 +67,22 @@ public class SegmentTree {
         return dfsFindSectionSum(head.right, start, end);
     }
 
-
+    //更新线段树，将index位置的值更新为value，需要更新沿路的值
+    public void update(int index, int value) {
+        Node root = head.right;
+        while (null != root) {
+            if (index >= root.start && index <= root.end) {
+                root.value += value - nums.get(index - 1);
+            }
+            int mid = root.start + ((root.end - root.start) >> 1);
+            if (index <= mid) {
+                root = root.left;
+                continue;
+            }
+            root = root.right;
+        }
+        nums.set(index - 1, value);
+    }
 
     private void madeChild(Node node, int start, int end) {
         if (start >= end) {

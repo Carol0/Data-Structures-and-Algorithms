@@ -11,6 +11,8 @@
 [AC自动机：Tire树+KMP](https://mp.weixin.qq.com/s?__biz=MzAwNTY2NTg4Nw==&mid=2247484276&idx=1&sn=3fc34700427c36600022475c4452375d&chksm=9b186644ac6fef52b1c901f6d5785b33d8e9e5d8ca728802ae4c4528b5267706b44f5442f445&token=1824792687&lang=zh_CN#rd)  
 [拓扑排序](https://mp.weixin.qq.com/s?__biz=MzAwNTY2NTg4Nw==&mid=2247484292&idx=1&sn=16a6b129bf4387a076cb59b08c191a22&chksm=9b1866b4ac6fefa20163ee0d89149f27bbfcde7ec054fd7a0daaa883bc3dc9561dccf01f6f56&token=1824792687&lang=zh_CN#rd)  
 [Dijkstra(迪杰斯特拉)算法](https://mp.weixin.qq.com/s?__biz=MzAwNTY2NTg4Nw==&mid=2247484299&idx=1&sn=ecefbccd3fb32c251bdc61dc636055b7&chksm=9b1866bbac6fefad0c7b636a053a89848775652299ec46d6b9b39e5a3fabb0598061321f9082&token=1824792687&lang=zh_CN#rd)
+[二叉搜索树](https://mp.weixin.qq.com/s?__biz=MzAwNTY2NTg4Nw==&mid=2247484309&idx=1&sn=e8aaeabb944a53313392277a08129812&chksm=9b1866a5ac6fefb36c3155e78ac3a99baa4e85f86a8bb1bb376ae113515fd54a23a5bdf30697&token=1124283905&lang=zh_CN#rd)
+[差分数组](https://mp.weixin.qq.com/s?__biz=MzAwNTY2NTg4Nw==&mid=2247484317&idx=1&sn=b2885e3807ea44ce83f12b5bea1c7227&chksm=9b1866adac6fefbbec4c288da02e82ed222235226ff28ef4e9cdaedb74f0a40ab6bdac5ca44f&token=1124283905&lang=zh_CN#rd)
 # 最后
 每晚22：00-23：00B站直播刷每日一题，刷完讲解思路，欢迎互相监督♥️  
 直播间：https://live.bilibili.com/24431750

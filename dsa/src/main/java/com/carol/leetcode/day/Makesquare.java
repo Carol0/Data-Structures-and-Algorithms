@@ -1,6 +1,5 @@
-package com.carol.leetcode;
+package com.carol.leetcode.day;
 
-import javax.swing.*;
 import java.util.Arrays;
 
 /**

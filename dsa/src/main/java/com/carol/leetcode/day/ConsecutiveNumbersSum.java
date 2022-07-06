@@ -1,7 +1,4 @@
-package com.carol.leetcode;
-
-import java.util.HashMap;
-import java.util.Map;
+package com.carol.leetcode.day;
 
 /**
  * @author Carol

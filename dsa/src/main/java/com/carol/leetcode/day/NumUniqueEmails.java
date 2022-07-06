@@ -1,4 +1,4 @@
-package com.carol.leetcode;
+package com.carol.leetcode.day;
 
 import java.util.HashSet;
 import java.util.Set;

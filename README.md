@@ -13,9 +13,5 @@
 [Dijkstra(迪杰斯特拉)算法](https://mp.weixin.qq.com/s?__biz=MzAwNTY2NTg4Nw==&mid=2247484299&idx=1&sn=ecefbccd3fb32c251bdc61dc636055b7&chksm=9b1866bbac6fefad0c7b636a053a89848775652299ec46d6b9b39e5a3fabb0598061321f9082&token=1824792687&lang=zh_CN#rd)  
 [二叉搜索树](https://mp.weixin.qq.com/s?__biz=MzAwNTY2NTg4Nw==&mid=2247484309&idx=1&sn=e8aaeabb944a53313392277a08129812&chksm=9b1866a5ac6fefb36c3155e78ac3a99baa4e85f86a8bb1bb376ae113515fd54a23a5bdf30697&token=1124283905&lang=zh_CN#rd)  
 [差分数组](https://mp.weixin.qq.com/s?__biz=MzAwNTY2NTg4Nw==&mid=2247484317&idx=1&sn=b2885e3807ea44ce83f12b5bea1c7227&chksm=9b1866adac6fefbbec4c288da02e82ed222235226ff28ef4e9cdaedb74f0a40ab6bdac5ca44f&token=1124283905&lang=zh_CN#rd)  
-# leetCode Hot100
-位置：leetcode/hot100  
-内容：陆续更新leetcode Hot100题目及解答，后期在B站上出视频讲解，到时候将视频链接附到文件中
-# 最后
-直播间：https://live.bilibili.com/24431750
+
 

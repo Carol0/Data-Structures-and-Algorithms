@@ -2,7 +2,6 @@ package com.carol.algorithms;
 
 
 
-import lombok.Data;
 
 import java.util.Arrays;
 
@@ -32,7 +31,6 @@ public class ArrayCustom {
      * 2.数组插入判断数组是否满,满了需要进行扩容
      * 3.扩容方式，申请一个原数组两倍大小的数组，将原数组copy入新数组
      */
-    @Data
     public static class DynamicArray {
         /**
          * 数组初始化大小

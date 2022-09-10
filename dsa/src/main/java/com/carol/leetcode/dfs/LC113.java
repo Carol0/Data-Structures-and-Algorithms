@@ -1,4 +1,4 @@
-package com.carol.leetcode.binary;
+package com.carol.leetcode.dfs;
 
 import com.carol.leetcode.infra.TreeNode;
 

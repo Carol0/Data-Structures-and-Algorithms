@@ -38,12 +38,14 @@ public class LC133 {
         if (null == node) {
             return node;
         }
+        //如果之前已经创建新节点，直接返回之前节点
         if (visited.containsKey(node)) {
             return visited.get(node);
         }
         ArrayList<Node> neighbors = new ArrayList<>();
         Node newNode = new Node(node.val, neighbors);
         visited.put(node, newNode);
+        //深度遍历每一个邻接点
         for (Node node1 : node.neighbors) {
             neighbors.add(cloneGraph(node1));
         }

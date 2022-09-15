@@ -1,5 +1,7 @@
 package com.carol.leetcode.dfs;
 
+import java.util.Arrays;
+
 /**
  * @author Carol
  * @date 2022/9/13
@@ -28,16 +30,16 @@ public class LC130 {
 //                ,{'O','X','O','X','O','O'},{'O','X','O','O','X','O'},
 //                {'O','X','O','X','O','O'},{'O','X','O','O','O','O'}};
         lc130.solve(board);
+        System.out.println(Arrays.deepToString(board));
     }
     public void solve(char[][] board) {
-        // 对上左两条边需要右下，右下两条边左上
         for (int i = 0 ; i < board.length ; i++) {
             dfs(board, i, 0);
-            dfs2(board, i, board[0].length - 1);
+            dfs(board, i, board[0].length - 1);
         }
         for (int j = 0 ; j < board[0].length ; j++) {
             dfs(board, 0, j);
-            dfs2(board, board.length - 1 , j);
+            dfs(board, board.length - 1 , j);
         }
         for (int i = 0 ; i < board.length ; i ++) {
             for (int j = 0 ; j < board[0].length ; j++) {
@@ -59,27 +61,16 @@ public class LC130 {
      * @param j
      */
     private void dfs(char[][] board, int i, int j) {
-        if (i >= board.length || j >= board[0].length ) {
+        if (i >= board.length || j >= board[0].length || i < 0 || j < 0) {
             return;
         }
-        if (board[i][j] == 'X') {
+        if (board[i][j] != 'O') {
             return;
         }
         board[i][j] = 'A';
-        //往右，下
-        dfs(board,i + 1, j);
+        dfs(board, i + 1, j);
         dfs(board, i, j + 1);
-    }
-
-    private void dfs2(char[][] board, int i , int j) {
-        if (i < 0 || j < 0) {
-            return;
-        }
-        if (board[i][j] == 'X') {
-            return;
-        }
-        board[i][j] = 'A';
-        dfs2(board,i - 1, j);
-        dfs2(board, i, j - 1);
+        dfs(board, i - 1, j);
+        dfs(board, i, j - 1);
     }
 }

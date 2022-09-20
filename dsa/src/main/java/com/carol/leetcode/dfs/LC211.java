@@ -108,28 +108,10 @@ public class LC211 {
             for (Trie child : node.children) {
                 if (null != child && (child.val == chars[index] || chars[index] == '.')) {
                     //只要有一个能匹配上都可以
-                     result = (result || dfs(child, chars, ++ index));
+                     result = (result || dfs(child, chars, index + 1));
                 }
             }
             return result;
-        }
-
-        public boolean find(String word) {
-            Trie trie = this;
-            for (char ch : word.toCharArray()) {
-                boolean flag = true;
-                for (Trie child : trie.children) {
-                    if ((null != child) && (child.val == ch || ch == '.')) {
-                        trie = child;
-                        flag = false;
-                        break;
-                    }
-                }
-                if (flag) {
-                    return false;
-                }
-            }
-            return trie.isEnd;
         }
     }
 }

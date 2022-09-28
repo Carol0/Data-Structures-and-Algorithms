@@ -96,5 +96,6 @@ public class LC297 {
     /**
      * 利用（）标记左右子树，null特殊标记为X
      * decode时，递归创建左右子树
+     *
      */
 }

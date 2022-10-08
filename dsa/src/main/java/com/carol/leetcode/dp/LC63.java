@@ -28,7 +28,7 @@ public class LC63 {
 
     public static void main(String[] args) {
         LC63 lc63 = new LC63();
-        System.out.println(lc63.uniquePathsWithObstacles(new int[][]{{0,1},{0,0}}));
+        System.out.println(lc63.uniquePathsWithObstacles2(new int[][]{{0,1},{0,0}}));
     }
 
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
@@ -53,5 +53,35 @@ public class LC63 {
         }
         return f[obstacleGrid.length - 1][obstacleGrid[0].length - 1];
     }
+
+
+    /**
+     * 滚动数组优化dp，当前位置f（i，j）仅与当前位置及相邻俩位置有关系，所以可以简化空间占用
+     * @param obstacleGrid
+     * @return
+     */
+    public int uniquePathsWithObstacles2(int[][] obstacleGrid) {
+        //一行一行的计算,f仅记录当前行路径树
+        int[] f = new int[obstacleGrid[0].length];
+        //初始化
+        f[0] = obstacleGrid[0][0] == 1 ? 0 : 1;
+        for (int i= 0 ; i < obstacleGrid.length ; i ++) {
+            for (int j = 0 ; j < obstacleGrid[0].length ; j ++) {
+                //当前位置是障碍物，直接不能到这里
+                if (obstacleGrid[i][j] == 1) {
+                    f[j] = 0;
+                    continue;
+                }
+                //j - 1 >= 0 ： 如果是最左边那个，只有一条路径可以走到，所以不用计算
+                //obstacleGrid[i][j - 1] == 0: 如果之前是障碍物，上面走不下来，也不需要更新
+                if (j - 1 >= 0 && obstacleGrid[i][j - 1] == 0) {
+                    //此时的f[j]相当于记录的是到达左边格子的路径数， f[j - 1]相当于是记录上边格子的路径数
+                    f[j] += f[j - 1];
+                }
+            }
+        }
+        return f[obstacleGrid[0].length - 1];
+    }
+
 
 }

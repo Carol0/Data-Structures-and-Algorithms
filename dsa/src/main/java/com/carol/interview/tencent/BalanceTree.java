@@ -33,25 +33,26 @@ public class BalanceTree {
         System.out.println(balanceTree.balance(treeNode));
 
     }
-    public int balance(TreeNode node) {
+    long mod = (long) Math.pow(10, 9) + 7;
+    public long balance(TreeNode node) {
         if (null == node.left && null == node.right) {
             node.value = 1;
             return 1;
         }
-        int leftNodeValue = balance(node.left);
-        int rightNodeValue = balance(node.right);
+        long leftNodeValue = balance(node.left);
+        long rightNodeValue = balance(node.right);
         node.value = 1;
         if (leftNodeValue == rightNodeValue) {
-            return leftNodeValue + rightNodeValue + node.value;
+            return (leftNodeValue + rightNodeValue + node.value) % mod;
         }
         if (leftNodeValue > rightNodeValue) {
             //放大右子树的值
-            node.right.value += (leftNodeValue - rightNodeValue);
-            return (leftNodeValue << 1) + 1;
+            node.right.value += (int)(leftNodeValue - rightNodeValue);
+            return ((leftNodeValue << 1) % mod + 1) % mod;
         }
         //放大的是左子树的值
-        node.left.value += (rightNodeValue - leftNodeValue);
-        return (rightNodeValue << 1) + 1;
+        node.left.value += (int)(rightNodeValue - leftNodeValue);
+        return ((rightNodeValue << 1) % mod + 1) % mod;
     }
 
     public static class TreeNode{

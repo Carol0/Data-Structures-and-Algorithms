@@ -48,7 +48,7 @@ public class SubarrayNum {
         this.addCountByNum(count, a.get(0));
         while (i <= j && i < a.size()) {
             if (count[0] + Math.min(count[1], count[2]) >= x) {
-                answer += a.size() - j;
+                answer = (int) ((answer + (a.size() - j)) % (Math.pow(10, 9) + 7));
                 this.removeCountByNum(count, a.get(i));
                 ++ i;
                 continue;

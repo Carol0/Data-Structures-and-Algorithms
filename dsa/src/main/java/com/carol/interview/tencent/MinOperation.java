@@ -26,7 +26,7 @@ public class MinOperation {
      */
     public static void main(String[] args) {
         MinOperation minOperation = new MinOperation();
-        System.out.println(minOperation.minOperation("aabbccbbndefghijklm"));
+        System.out.println(minOperation.minOperation("abcdefghijklmnopqrstuvwxyz"));
     }
     public int minOperation(String str) {
         //用下标代替字母，value值记录字母出现的次数
@@ -45,6 +45,7 @@ public class MinOperation {
             }
             if (chars[i] == 1) {
                 ans += 1;
+                continue;
             }
             ans += (chars[i] % 2 == 0 ? chars[i] / 2 : chars[i] / 2 + 1);
             operate += chars[i] / 2;

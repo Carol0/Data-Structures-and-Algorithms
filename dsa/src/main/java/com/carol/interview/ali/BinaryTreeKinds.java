@@ -46,7 +46,7 @@ public class BinaryTreeKinds {
         for (int i = 1 ; i <= n ; i ++) {
             for (int j = 1 ; j <= m ; j ++) {
                 for (int k = 0 ; k < i ; k ++) {
-                    dp[i][j] = (dp[i][j]) + (dp[k][j - 1] * dp[i - k - 1][j - 1]);
+                    dp[i][j] = ((dp[i][j]) + ((dp[k][j - 1] * dp[i - k - 1][j - 1]) % mod)) % mod;
                 }
             }
         }

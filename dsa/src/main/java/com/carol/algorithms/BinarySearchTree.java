@@ -1,6 +1,6 @@
 package com.carol.algorithms;
 
-import com.carol.leetcode.infra.TreeNode;
+import com.carol.infra.TreeNode;
 import org.apache.commons.lang3.tuple.Pair;
 
 /**

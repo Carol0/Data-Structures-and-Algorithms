@@ -1,6 +1,6 @@
 package com.carol.leetcode.dfs;
 
-import com.carol.leetcode.infra.TreeNode;
+import com.carol.infra.TreeNode;
 
 import java.util.Deque;
 import java.util.LinkedList;

@@ -1,12 +1,9 @@
 package com.carol.leetcode.dfs;
 
-import com.carol.leetcode.infra.TreeNode;
+import com.carol.infra.TreeNode;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 /**
  * @author Carol

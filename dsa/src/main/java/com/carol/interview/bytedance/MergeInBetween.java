@@ -1,8 +1,6 @@
 package com.carol.interview.bytedance;
 
-import com.carol.leetcode.infra.ListNode;
-
-import java.util.List;
+import com.carol.infra.ListNode;
 
 /**
  * @author Carol

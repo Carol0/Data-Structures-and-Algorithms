@@ -1,4 +1,4 @@
-package com.carol.leetcode.infra;
+package com.carol.infra;
 
 /**
  * @author Carol
@@ -16,4 +16,15 @@ public class ListNode {
         this.val = val;
         this.next = next;
     }
+
+    public int length() {
+        ListNode head = this;
+        int length = 0;
+        while (null != head) {
+            ++ length;
+            head = head.next;
+        }
+        return length;
+    }
+
 }

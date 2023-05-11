@@ -1,4 +1,4 @@
-package com.carol.leetcode.infra;
+package com.carol.infra;
 
 /**
  * @author Carol

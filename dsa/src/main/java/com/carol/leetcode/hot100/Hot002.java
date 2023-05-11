@@ -1,6 +1,6 @@
 package com.carol.leetcode.hot100;
 
-import com.carol.leetcode.infra.ListNode;
+import com.carol.infra.ListNode;
 
 /**
  * @author Carol

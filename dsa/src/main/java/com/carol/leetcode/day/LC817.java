@@ -1,6 +1,6 @@
 package com.carol.leetcode.day;
 
-import com.carol.leetcode.infra.ListNode;
+import com.carol.infra.ListNode;
 
 import java.util.HashSet;
 import java.util.Set;

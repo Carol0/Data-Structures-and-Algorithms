@@ -1,9 +1,6 @@
 package com.carol.leetcode.dfs;
 
-import com.carol.leetcode.infra.TreeNode;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.carol.infra.TreeNode;
 
 /**
  * @author Carol

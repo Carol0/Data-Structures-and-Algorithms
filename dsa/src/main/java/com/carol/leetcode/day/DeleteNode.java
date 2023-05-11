@@ -1,6 +1,6 @@
 package com.carol.leetcode.day;
 
-import com.carol.leetcode.infra.TreeNode;
+import com.carol.infra.TreeNode;
 
 
 /**
